@@ -1,0 +1,8 @@
+<ul>
+   {% for postcode in Postcodes %}
+        <li><b>{{ postcode.name }}:</b> </li>
+        <li>Postcode:{{ postcode.postcode }}: </li>
+        <li>Latitude:{{ postcode.latitude }}: </li>
+        <li>Longitude:{{ postcode.longitude }}: </li>
+   {% endfor %}
+</ul>
