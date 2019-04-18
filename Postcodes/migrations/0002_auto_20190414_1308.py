@@ -5,13 +5,6 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('Postcodes', '0001_initial'),
-    ]
+    dependencies = [("Postcodes", "0001_initial")]
 
-    operations = [
-        migrations.RenameModel(
-            old_name='Postcodes',
-            new_name='Postcode',
-        ),
-    ]
+    operations = [migrations.RenameModel(old_name="Postcodes", new_name="Postcode")]
