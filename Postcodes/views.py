@@ -110,7 +110,7 @@ class PostcodesWithinRadius(generics.ListAPIView):
         return Postcode.objects.filter(
             Q(latitude__range=(latitude_min, latitude_max))
             & Q(longitude__range=(longitude_min, longitude_max))
-        ).order_by("latitude")
+        ).order_by("latitude").values()
 
     def get_postcodes_within_radius(self, postcode, radius_km):
 
